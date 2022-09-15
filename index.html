@@ -1,42 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>biennial 2022</title>
-  </head>
-  <body>
-<header>
-  <div class="logo">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>biennial 2022</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body class="bg-primary">
+  <header class="container">
+    <div class="flex-wrap">
+      <div class="logo bg bg-square bg-right">
+        <img src="assets/img/tab-logo.svg" alt="">
+      </div>
+      <div class="navigation">
+        <nav>
+          <ul class="flex-wrap">
+            <li>
+              <span class="bg bg-rectangule-01">
+                <a href="#">about</a>
+              </span>
+            </li>
+            <li class="has-child">
+              <span class="bg bg-rectangule-02">
+                <a href="#">
+                  program 2022
+                </a>
+              </span>
+              <ul class="has-parent">
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      statement
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      event
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      artistic directors
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      participants
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      locations
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      calendar
+                    </a>
+                  </span>
+                </li>
+                <li>
+                  <span class="bg bg-rectangule-02">
+                    <a href="#">
+                      tab 2022 guide
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="bg bg-rectangule-02">
+                <a href="#">
+                  media
+                </a>
+              </span>
+            </span>
 
+          </li>
+          <li>
+            <span class="bg bg-rectangule-04">
+              <a href="#">
+                support
+              </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <div class="navigation">
-    <nav>
-      <ul>
-        <li>about</li>
-        <li class="has-child">
-          <span>program 2022</span>
-          <ul>
-            <li>statement</li>
-            <li>event</li>
-            <li>artistic directors</li>
-            <li>participants</li>
-            <li>locations</li>
-            <li>calendar</li>
-            <li>tab 2022 guide</li>
-          </ul>
-        </li>
-        <li>media</li>
-        <li>support</li>
-      </ul>
-    </nav>
-  </div>
-
 </header>
+
 <main>
 
 </main>
 
 <footer>
 </footer>
-  </body>
+</body>
 </html>
+
+<script>
+$("li.has-child").click(function(){
+  $(".has-parent").fadeToggle();
+});
+</script>

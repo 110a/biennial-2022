@@ -1,0 +1,77 @@
+/* color #3D62FF */
+.cls-primary {
+  color: #3D62FF;
+}
+.bg-primary {
+  background-color: #3D62FF;
+}
+.bg-square {
+  background-image: url("../img/bg/bg-square.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-01 {
+  background-image: url("../img/bg/rectangule-01.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-02 {
+  background-image: url("../img/bg/rectangule-02.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-03 {
+  background-image: url("../img/bg/rectangule-03.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-04 {
+  background-image: url("../img/bg/rectangule-04.svg");
+  background-repeat: no-repeat;
+}
+.bg {
+  background-size: cover;
+  background-position: right;
+}
+.bg-right {
+  background-position: right;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+}
+.container {
+  padding: 90px 140px 70px 140px;
+}
+.logo {
+    width: 150px;
+    padding: 20px;
+}
+/* navigation */
+.navigation li {
+    padding-left: 20px;
+    font-size: 22px;
+}
+.navigation ul.has-parent li {
+    padding: 6px 0 0 0;
+    font-size: 20px;
+    font-size: 18px;
+}
+.navigation li span {
+    padding: 6px 20px 6px 6px;
+    display: inline-block;
+}
+.navigation ul.has-parent li span {
+  padding: 1px 2px 1px 2px;
+  display: inline-block;
+}
+/* end navigation */
+/* რესეტ ანდ ნონე */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.has-child ul {
+  display: none;
+}
