@@ -256,7 +256,6 @@ span.square {
 .event-detailed .program-item .dat-loc {
 margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
 }
 span.dat, span.loc {
     padding: 2px 10px 2px 10px;
