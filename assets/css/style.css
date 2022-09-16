@@ -265,6 +265,9 @@ span.dat.bg.program-wide {
     padding-right: 50px;
     margin-right: 6px;
 }
+span.loc.bg.program-wide {
+    padding-right: 40px;
+}
 .event-detailed .program-item .part {
 margin-bottom: 10px;
     display: flex;
