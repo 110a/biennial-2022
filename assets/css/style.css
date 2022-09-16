@@ -70,6 +70,9 @@ header {
 li.active {
     color: #3d62ff;
 }
+li.active .has-parent li{
+    color: #000000;
+}
 .navigation ul.has-parent li {
     padding: 6px 0 0 0;
     font-size: 20px;
