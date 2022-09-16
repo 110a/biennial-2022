@@ -25,9 +25,17 @@
   background-image: url("../img/bg/rectangule-04.svg");
   background-repeat: no-repeat;
 }
+.program-wide {
+  background-image: url("../img/bg/program-wide.svg");
+  background-repeat: no-repeat;
+}
 .bg {
   background-size: cover;
   background-position: right;
+}
+.bg-top {
+  background-size: cover;
+  background-position: top;
 }
 .bg-right {
   background-position: right;
@@ -41,7 +49,10 @@
   align-items:flex-start;
 }
 .container {
-  padding: 90px 140px 70px 140px;
+  padding:0px 140px 70px 140px;
+}
+header {
+    padding: 80px 140px 70px 140px;
 }
 .logo {
     width: 150px;
@@ -74,4 +85,85 @@ ul {
 }
 .has-child ul {
   display: none;
+}
+li.has-child {
+    position: relative;
+}
+.has-parent {
+    position: absolute;
+    left: 25px;
+}
+.search input {
+  background-color: none;
+  border: transparent;
+  padding: 6px 12px;
+}
+
+input::placeholder {
+    font-size: 12px;
+    color: #cccccc;
+}
+.search span {
+  display: block;
+  padding: 6px;
+  margin-left: -35px;
+  margin-right: 4px;
+}
+.search span img {
+  display: block;
+  width: 20px;
+}
+.program-list {
+  padding: 0 0 80px 10px;
+}
+.program-item {
+  padding: 0 10px 20px 10px;
+  width: 50%;
+  box-sizing: border-box;
+}
+.program-item > div {
+  padding: 20px 20px 20px 20px;
+}
+.date {
+  font-size: 100px;
+  display: block;
+  /* font-weight: bold; */
+}
+.month {
+  line-height: 20px;
+    margin-top: -6px;
+    display: block;
+    /* text-align: center; */
+    letter-spacing: 4px;
+    font-size: 38px;
+    /* padding-left: 20px; */
+    font-weight: normal;
+}
+.program-info {
+    padding-left: 20px;
+}
+.category.underline {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.program-info h2 {
+    margin-bottom: 4px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+address {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: normal;
+}
+.participants {
+    font-size: 12px;
+}
+
+.date-month {
+    margin-top: -15px;
 }
