@@ -107,16 +107,72 @@
   <div class="flex-wrap">
     <div style="flex: 0 0 120px;">
       <form class="search flex" action="index.html" method="post">
-        <span class="bg bg-rectangule-02">
+        <span class="bg-full bg-rectangule-02">
           <img src="assets/img/search.svg" alt="">
         </span>
-        <input class="bg bg-rectangule-03" type="text" name="" value="" placeholder="search" autofocus>
+        <input class="bg-full bg-rectangule-03" type="text" name="" value="" placeholder="search" autofocus>
       </form>
+      <div>
+        <div class="drop-down">
+          <div class="bg program-square location">
+            <div class="location-title" style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+              <span>location</span>
+              <span class="drop-icon"><img src="assets/img/drop-down.svg" alt=""></span>
+            </div>
+            <div class="drop-down-children">
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span style="margin-bottom: 10px;display: block;"><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="drop-down">
+          <div class="bg bg-rectangule-02 location">
+            <div class="category-title" style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+              <span>category</span>
+              <span class="drop-icon"><img src="assets/img/drop-down.svg" alt=""></span>
+            </div>
+            <div class="drop-down-children">
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+              <span style="margin-bottom: 10px;display: block;"><span class="square"></span> Didi Digomi, Tbilisi, I. Petritse 14</span><br/>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="drop-down">
+          <div class="bg program-square location">
+            <div class="date-title" style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+              <span>date</span>
+              <span class="drop-icon"><img src="assets/img/drop-down.svg" alt=""></span>
+            </div>
+            <div class="drop-down-children">
+            <img src="assets/img/calendar.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+      <div>
+
+      </div>
     </div>
 
     <div class="program-list flex-wrap" style="flex: 1;">
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               15
@@ -140,7 +196,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               30
@@ -164,7 +220,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               19
@@ -188,7 +244,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               2
@@ -212,7 +268,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               22
@@ -236,7 +292,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               4
@@ -260,7 +316,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               6
@@ -284,7 +340,7 @@
         </div>
       </div>
       <div class="program-item ">
-        <div class="bg program-wide flex">
+        <div class="bg-full program-wide flex">
           <div class="date-month">
             <span class="date">
               8
@@ -324,5 +380,23 @@
 <script>
 $("li.has-child").hover(function(){
   $(".has-parent").fadeToggle();
+});
+$(".location-title").click(function(){
+  $(this).toggleClass("active");
+  $(".location-title + .drop-down-children").slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+$(".category-title").click(function(){
+  $(this).toggleClass("active");
+  $(".category-title + .drop-down-children").slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+$(".date-title").click(function(){
+  $(this).toggleClass("active");
+  $(".date-title + .drop-down-children").slideToggle( "slow", function() {
+    // Animation complete.
+  });
 });
 </script>
