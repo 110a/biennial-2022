@@ -226,6 +226,7 @@ span.square {
 
 .drop-down-children img {
     padding: 0 20px;
+    box-sizing: border-box
 }
 .event-detailed h2 {
     padding: 4px 10px;
