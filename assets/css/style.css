@@ -265,7 +265,6 @@ span.dat, span.loc {
 .event-detailed .program-item .part {
 margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
     padding: 2px 10px 2px 20px;
 }
 .event-detailed .program-item .content {
