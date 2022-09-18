@@ -44,84 +44,10 @@
 .bg-right {
   background-position: right;
 }
-.flex {
-  display: flex;
-}
-.relative {
-  position: relative;
-}
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items:flex-start;
-}
 .container {
   padding:0px 140px 70px 140px;
 }
-header {
-    padding: 80px 140px 70px 140px;
-}
-.logo {
-    width: 150px;
-    padding: 20px;
-}
-/* navigation */
-.navigation li {
-    padding-left: 20px;
-    font-size: 22px;
-}
-li.active {
-    color: #3d62ff;
-}
-li.active .has-parent li{
-    color: #000000;
-}
-/* .active .has-parent li:hover {
-    opacity: 0;
-} */
-.navigation .has-parent li:hover {
-    opacity: 0.8;
-}
-.navigation li {
-    transition: opacity .4s;
-}
-ul.has-parent li.active a {
-    color: #3d62ff;
-}
-.navigation ul.has-parent li {
-    padding: 6px 0 0 0;
-    font-size: 20px;
-    font-size: 18px;
-}
-.navigation li span {
-    padding: 6px 20px 6px 6px;
-    display: inline-block;
-}
-.navigation ul.has-parent li span {
-  padding: 1px 2px 1px 2px;
-  display: inline-block;
-}
-/* end navigation */
-/* რესეტ ანდ ნონე */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.has-child ul {
-  display: none;
-}
-.drop-down-children {
-    display: none;
-}
-li.has-child {
-    position: relative;
-  z-index: 100;
-}
-.has-parent {
-    position: absolute;
-    left: 25px;
-}
+
 .search input {
   background-color: none;
   border: transparent;
@@ -156,7 +82,9 @@ input::placeholder {
 .event-detailed .program-item > div {
   padding: 0px;
 }
-
+.drop-down-children {
+    display: none;
+}
 .date {
   font-size: 95px;
   display: block;
@@ -289,9 +217,4 @@ span.title-pro:nth-of-type(1) {
     margin-top: 0px;
     display: block;
     margin-bottom: 0px;
-}
-.navigation li:nth-of-type(1):hover,
-.navigation li:nth-of-type(3):hover,
-.navigation li:nth-of-type(4):hover{
-    opacity: 0.6;
 }

@@ -22,6 +22,8 @@ html {
 
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /**
@@ -140,6 +142,11 @@ sub {
 
 sup {
   top: -0.5em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Embedded content
