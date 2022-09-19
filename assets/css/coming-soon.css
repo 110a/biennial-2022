@@ -65,7 +65,7 @@ main {
   font-size: 20px;
 }
 .coming-soon {
-  /* animation: bubble 6s linear infinite; */
+  animation: bubble 6s linear infinite;
 }
 main span {
   font-size: 22px;
@@ -130,13 +130,13 @@ footer > div:nth-of-type(1) {
     transform: translate(0, 0);
   }
   25% {
-    transform: translate(300px, 100px) rotate(90deg);
+    transform: translate(100px, -100px) rotate(90deg);
   }
   50% {
-    transform: translate(200px, 200px) rotate(180deg);
+    transform: translate(-100px, 200px) rotate(180deg);
   }
   75% {
-    transform: translate(100px, 300px) rotate(270deg);
+    transform: translate(-100px, 100px) rotate(270deg);
   }
   100% {
     transform: translate(0px, 0px);
