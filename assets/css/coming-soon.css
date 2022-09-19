@@ -18,8 +18,8 @@
 body {
   font-family: 'Helvetica';
   font-weight: normal;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
   background-color: #3D62FF;
   margin: 0px;
   padding: 0px;
@@ -63,6 +63,10 @@ header {
   padding: 2px 6px 2px 3px;
   display: inline-block;
 }
+.bg-next {
+    /* animation: bubble 3s linear infinite;
+  animation-delay: .5s; */
+}
 main {
   display: flex;
   align-items: center;
@@ -70,34 +74,36 @@ main {
   font-size: 20px;
 }
 .coming-soon {
-  /* animation: bubble 6s linear infinite; */
-  animation-delay: .8s;
+  display: block;
+  animation: bubble 4s linear infinite;
+  animation-delay: .3s;
+  -webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
 }
 main span {
-  font-size: 30px;
-  line-height: 32px;
-  padding: 2px 6px 2px 3px;
+  font-size: 36px;
+  line-height: 38px;
+  padding: 2px 10px 4px 10px;
 }
 footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10px;
 }
 footer > div {
-  margin: 10px;
-  padding: 2px 10px 2px 3px;
+  /* margin: 10px; */
+  padding: 4px 14px 3px 7px;
 }
 footer > div:nth-of-type(1) {
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 33px;
 }
 footer > div:nth-of-type(2) {
-  margin-top: 77px;
+  margin-left: 145px;
 }
 footer > div:nth-of-type(3) {
-  margin-top: 140px;
+  margin-left: 330px;
 }
 /* color #3D62FF */
 .bg-square {
@@ -129,8 +135,8 @@ footer > div:nth-of-type(3) {
   background-repeat: no-repeat;
 }
 .bg-next {
-background-image: url("../img/bg/bg-next.svg");
-background-repeat: no-repeat;
+  background-image: url("../img/bg/bg-next.svg");
+  background-repeat: no-repeat;
 }
 
 .bg {
@@ -145,58 +151,104 @@ background-repeat: no-repeat;
   background-position: right;
 }
 @keyframes bubble {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(80px, -100px) rotate(90deg);
-  }
-  50% {
-    transform: translate(-10px, 100px) rotate(180deg);
-  }
-  75% {
-    transform: translate(-100px, 100px) rotate(270deg);
-  }
-  100% {
-    transform: translate(0px, 0px);
-  }
+       0% {
+          transform: translate(0px,0px);
+        }
+        50% {
+          transform: translate(0px,7px);
+        }
+        100% {
+          transform: translate(0px,0px);
+        }
 }
 @media screen and (max-width: 1024px) {
-body {
-  padding: 40px;
+  body {
+    padding: 50px;
+  }
+  .logo {
+    left: 40px;
+    top: 40px;
+  }
 }
-.logo {
-  left: 40px;
-  top: 40px;
-}
+@media screen and (max-width: 860px) {
+  .next {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  main span {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  footer > div:nth-of-type(1) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  body {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 @media screen and (max-width: 768px) {
-body {
-  padding: 30px;
-}
   header {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
+  }
+  .logo {
+    left: 40px;
+    top: 40px;
+    position: static;
+    margin-bottom: 30px;
+  }
 }
-.logo {
-  left: 40px;
-  top: 40px;
-  position: static;
-  margin-bottom: 30px;
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 40px;
+  }
+  footer > div:nth-of-type(1) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  footer > div:nth-of-type(2) {
+    margin-left: 82px;
+    margin-top: 15px;
+  }
+  footer > div:nth-of-type(3) {
+    margin-left: 186px;
+    margin-top:  15px;
+  }
 }
+
+@media screen and (max-width: 420px) {
+  .next {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 395px) {
+  footer > div:nth-of-type(2) {
+    margin-left: 63px;
+    margin-top: 15px;
+  }
+  footer > div:nth-of-type(3) {
+    margin-left: 152px;
+    margin-top:  15px;
+  }
 }
 @media screen and (max-width: 360px) {
-body {
-  padding: 25px;
-}
-.next {
-  font-size: 30px;
-  padding: 2px 6px 2px 3px;
-}
+  body {
+    padding: 25px;
+  }
+  .next {
+    font-size: 34px;
+    line-height: 34px;
+    padding: 2px 6px 2px 3px;
+  }
 }
