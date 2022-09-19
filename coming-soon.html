@@ -37,7 +37,7 @@
 <script>
 function randomColor() {
   var color = '#';
-  var colorCode = ['3D62FF','000000','737373']; // colors
+  var colorCode = ['181818','FFEE00','4561FF', '55DC3C']; // colors
   var className = document.getElementsByClassName("change"); // class name to random color
   var i;
   color += colorCode[Math.floor(Math.random() * colorCode.length)];
@@ -45,19 +45,7 @@ function randomColor() {
     className[i].style.backgroundColor = color; }
 }
   $( document ).ready(function() {
-
-
-
     $('body').css('max-height', (window.innerHeight + "px"));
-
-
-
 });
 
-  // // We listen to the resize event
-  // window.addEventListener('resize', () => {
-  //   // We execute the same script as before
-  //   let vh = window.innerHeight * 0.01;
-  //   document.documentElement.style.setProperty('--vh', `${vh}px`);
-  // });
 </script>
