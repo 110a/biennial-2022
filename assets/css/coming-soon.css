@@ -28,6 +28,7 @@ body {
   align-items: center;
   height: 100vh;
   max-height: -webkit-fill-available;
+  height: calc(var(--vh, 1vh) * 100);
   padding: 80px 80px 40px 80px;
   box-sizing: border-box;
 }
