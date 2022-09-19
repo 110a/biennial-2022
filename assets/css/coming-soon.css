@@ -29,7 +29,7 @@ body {
   height: 100vh;
   max-height: -webkit-fill-available;
   height: calc(var(--vh, 1vh) * 100);
-  padding: 100px 80px 100px 80px;
+  padding: 110px 80px 100px 80px;
   box-sizing: border-box;
 }
 a {
