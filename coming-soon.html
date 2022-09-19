@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <title>biennial 2022</title>
   <link rel="stylesheet" href="assets/css/coming-soon.css">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-<style>
-
-</style>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 <body style="background-color: #3D62FF;">
   <header class="flex-wrap flex-start">
@@ -37,10 +35,15 @@
 </html>
 
 <script>
-  // We listen to the resize event
-  window.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
+  $( document ).ready(function() {
+    $('body').css('max-height', (window.innerHeight + "px"));
+
+});
+
+  // // We listen to the resize event
+  // window.addEventListener('resize', () => {
+  //   // We execute the same script as before
+  //   let vh = window.innerHeight * 0.01;
+  //   document.documentElement.style.setProperty('--vh', `${vh}px`);
+  // });
 </script>
