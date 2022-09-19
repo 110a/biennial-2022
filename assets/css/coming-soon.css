@@ -59,6 +59,7 @@ header {
 .next {
   font-size: 50px;
   padding: 2px 6px 2px 3px;
+  display: inline-block;
 }
 main {
   display: flex;
