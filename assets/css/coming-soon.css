@@ -18,7 +18,7 @@
 body {
   font-family: 'Helvetica';
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #3D62FF;
   margin: 0px;
   padding: 0px;
@@ -57,7 +57,7 @@ header {
   top: 80px;
 }
 .next {
-  font-size: 40px;
+  font-size: 50px;
   padding: 2px 6px 2px 3px;
 }
 main {
@@ -67,11 +67,11 @@ main {
   font-size: 20px;
 }
 .coming-soon {
-  animation: bubble 6s linear infinite;
+  /* animation: bubble 6s linear infinite; */
   animation-delay: .8s;
 }
 main span {
-  font-size: 22px;
+  font-size: 30px;
   padding: 2px 6px 2px 3px;
 }
 footer {
@@ -83,10 +83,16 @@ footer {
 }
 footer > div {
   margin: 10px;
-  padding: 2px 6px 2px 3px;
+  padding: 2px 10px 2px 3px;
 }
 footer > div:nth-of-type(1) {
-  font-size: 22px;
+  font-size: 28px;
+}
+footer > div:nth-of-type(2) {
+  margin-top: 77px;
+}
+footer > div:nth-of-type(3) {
+  margin-top: 140px;
 }
 /* color #3D62FF */
 .bg-square {
@@ -117,6 +123,11 @@ footer > div:nth-of-type(1) {
   background-image: url("../img/bg/program-square.svg");
   background-repeat: no-repeat;
 }
+.bg-next {
+background-image: url("../img/bg/bg-next.svg");
+background-repeat: no-repeat;
+}
+
 .bg {
   background-size: cover;
   background-position: right;
