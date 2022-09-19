@@ -44,6 +44,10 @@
 .bg-right {
   background-position: right;
 }
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
 .container {
   padding:0px 140px 70px 140px;
 }
