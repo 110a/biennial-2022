@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 80px 140px 30px 140px;
+  padding: 80px 80px 40px 80px;
   box-sizing: border-box;
 }
 a {
@@ -65,7 +65,7 @@ main {
   font-size: 20px;
 }
 .coming-soon {
-  animation: bubble 6s linear infinite;
+  /* animation: bubble 6s linear infinite; */
 }
 main span {
   font-size: 22px;
@@ -141,4 +141,43 @@ footer > div:nth-of-type(1) {
   100% {
     transform: translate(0px, 0px);
   }
+}
+@media screen and (max-width: 1024px) {
+body {
+  padding: 40px;
+}
+.logo {
+  left: 40px;
+  top: 40px;
+}
+}
+@media screen and (max-width: 768px) {
+body {
+  padding: 30px;
+}
+  header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.logo {
+  left: 40px;
+  top: 40px;
+  position: static;
+  margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 360px) {
+body {
+  padding: 25px;
+}
+.next {
+  font-size: 30px;
+  padding: 2px 6px 2px 3px;
+}
 }
