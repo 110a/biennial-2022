@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+  url('../fonts/Helvetica-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.woff2') format('woff2'),
+  url('../fonts/Helvetica.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'Helvetica';
+  font-weight: normal;
+  font-size: 16px;
+  background-color: #3D62FF;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 140px 30px 140px;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity .3s, color .3s;
+}
+a:hover {
+  /* opacity: 0.6; */
+  color: #3D62FF;
+}
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.logo {
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  left: 130px;
+  top: 80px;
+}
+.next {
+  font-size: 40px;
+  padding: 2px 6px 2px 3px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.coming-soon {
+  animation: bubble 6s linear infinite;
+}
+main span {
+  font-size: 22px;
+  padding: 2px 6px 2px 3px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+footer > div {
+  margin: 10px;
+  padding: 2px 6px 2px 3px;
+}
+footer > div:nth-of-type(1) {
+  font-size: 22px;
+}
+/* color #3D62FF */
+.bg-square {
+  background-image: url("../img/bg/bg-square.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-01 {
+  background-image: url("../img/bg/rectangule-01.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-02 {
+  background-image: url("../img/bg/rectangule-02.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-03 {
+  background-image: url("../img/bg/rectangule-03.svg");
+  background-repeat: no-repeat;
+}
+.bg-rectangule-04 {
+  background-image: url("../img/bg/rectangule-04.svg");
+  background-repeat: no-repeat;
+}
+.program-wide {
+  background-image: url("../img/bg/program-wide.svg");
+  background-repeat: no-repeat;
+}
+.program-square {
+  background-image: url("../img/bg/program-square.svg");
+  background-repeat: no-repeat;
+}
+.bg {
+  background-size: cover;
+  background-position: right;
+}
+.bg-full {
+  background-size: cover;
+  background-position: right;
+}
+.bg-right {
+  background-position: right;
+}
+@keyframes bubble {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(300px, 100px) rotate(90deg);
+  }
+  50% {
+    transform: translate(200px, 200px) rotate(180deg);
+  }
+  75% {
+    transform: translate(100px, 300px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

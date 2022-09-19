@@ -1,9 +1,9 @@
 header {
-    padding: 80px 140px 70px 140px;
+  padding: 80px 140px 70px 140px;
 }
 .logo {
-    width: 150px;
-    padding: 20px;
+  width: 150px;
+  padding: 20px;
 }
 /* navigation */
 .nav-icon {
@@ -13,35 +13,35 @@ header {
   display: none;
 }
 .navigation li {
-    font-size: 22px; /* font size */
-    margin-left: 20px;
+  font-size: 22px; /* font size */
+  margin-left: 20px;
 }
 .navigation ul.has-parent li {
-    font-size: 18px; /* font size */
-    margin-left: 6px;
-    margin-top: 6px;
+  font-size: 18px; /* font size */
+  margin-left: 6px;
+  margin-top: 6px;
 }
 
 .navigation  li.active ul li {
-    color: #000000;
+  color: #000000;
 }
 .navigation li.active,
 .navigation li.active ul li.active {
-    color: #3d62ff;
+  color: #3d62ff;
 }
 
 .navigation li span {
-    transition: opacity .4s;
+  transition: opacity .4s;
 }
 .navigation li span:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 .navigation li span {
-    display: inline-block;
+  display: inline-block;
 }
 .navigation li span a {
-    padding: 6px 20px 6px 6px;
-    display: block;
+  padding: 6px 20px 6px 6px;
+  display: block;
 }
 .navigation ul.has-parent li span a {
   padding: 1px 2px 1px 2px;
@@ -51,16 +51,43 @@ header {
 /* რესეტ ანდ ნონე */
 @media screen and (max-width: 1024px) {
   /* navicon*/
-  .responsive {
+  header {
     justify-content: space-between;
   }
   .navigation nav {
-    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: -105%;
+    top: 0%;
+    /* background-color: #4068fb; */
+    background-image: url("../img/bg/bg-square.svg");
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: right .4s ease-in-out;
+  }
+  .navigation.active nav {
+    right: 0%;
+  }
+  .navigation nav ul {
+    flex-direction: column;
+  }
+  .navigation nav ul li:not(.has-parent) {
+    margin-bottom: 15px;
+  }
+  .navigation ul.has-parent {
+    display: block!important;
+    position: static;
   }
   .nav-icon {
+    position: relative;
     display: block;
     width: 38px;
     height: 38px;
+    z-index: 999;
   }
   .nav-icon span {
     display: flex;
@@ -70,6 +97,8 @@ header {
     height: 7px;
     margin-bottom: 7px;
     background-repeat: no-repeat;
+    transition: transform .3s, opacity .2s;
+
   }
   .nav-icon span:nth-of-type(1) {
     background-image: url("../img/bg/bg-nav-navicon.svg");
@@ -80,14 +109,14 @@ header {
   .nav-icon span:nth-of-type(3) {
     background-image: url("../img/bg/bg-nav-navicon.svg");
   }
-  .nav-icon.active span:nth-of-type(1) {
-    background-image: url("../img/bg/bg-nav-navicon.svg");
+  .navigation.active .nav-icon span:nth-of-type(1) {
+    transform: rotate(45deg) translate(12px, 10px);
   }
-  .nav-icon.active span:nth-of-type(2) {
-    background-image: url("../img/bg/bg-nav-navicon.svg");
+  .navigation.active .nav-icon span:nth-of-type(2) {
+    opacity: 0;
   }
-  .nav-icon.active span:nth-of-type(3) {
-    background-image: url("../img/bg/bg-nav-navicon.svg");
+  .navigation.active .nav-icon span:nth-of-type(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
   }
 }
 
@@ -98,6 +127,6 @@ li.has-child {
   z-index: 100;
 }
 .has-parent {
-    position: absolute;
-    left: 0px;
+  position: absolute;
+  left: 0px;
 }

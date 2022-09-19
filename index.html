@@ -12,82 +12,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
-<body class="bg-primary">
+<body>
   <header>
-    <div class="flex-wrap flex-start responsive">
-      <div class="logo bg bg-square bg-right">
-        <a href="index.html"><img src="assets/img/tab-logo.svg" alt=""></a>
-      </div>
-      <div class="navigation">
-        <span class="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <nav>
-          <ul class="flex-wrap">
-            <li>
-              <span class="bg bg-rectangule-01">
-                <a href="#">about</a>
-              </span>
-            </li>
-            <li class="has-child active">
-              <span class="bg bg-rectangule-02">
-                <a href="#">
-                  program 2022
-                </a>
-              </span>
-              <ul class="has-parent">
-                <li>
-                  <span class="bg bg-rectangule-02">
-                    <a href="#">
-                      statement
-                    </a>
-                  </span>
-                </li>
-                <li class="active">
-                  <span class="bg bg-rectangule-02">
-                    <a href="event.html">
-                      event
-                    </a>
-                  </span>
-                </li>
-                <li>
-                  <span class="bg bg-rectangule-02">
-                    <a href="#">
-                      artistic directors
-                    </a>
-                  </span>
-                </li>
-                <li>
-                  <span class="bg bg-rectangule-02">
-                    <a href="#">
-                      participants
-                    </a>
-                  </span>
-                </li>
-                <!-- <li>
-                <span class="bg bg-rectangule-02">
-                <a href="#">
-                locations
+    <div class="logo bg bg-square bg-right">
+      <a href="index.html"><img src="assets/img/tab-logo.svg" alt=""></a>
+    </div>
+    <div class="navigation">
+      <span class="nav-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <nav>
+        <ul class="flex-wrap">
+          <li>
+            <span class="bg bg-rectangule-01">
+              <a href="#">about</a>
+            </span>
+          </li>
+          <li class="has-child active">
+            <span class="bg bg-rectangule-02">
+              <a href="#">
+                program 2022
               </a>
             </span>
-          </li> -->
-          <!-- <li>
-          <span class="bg bg-rectangule-02">
-          <a href="#">
-          calendar
-        </a>
-      </span>
-    </li> -->
-    <li>
-      <span class="bg bg-rectangule-02">
+            <ul class="has-parent">
+              <li>
+                <span class="bg bg-rectangule-02">
+                  <a href="#">
+                    statement
+                  </a>
+                </span>
+              </li>
+              <li class="active">
+                <span class="bg bg-rectangule-02">
+                  <a href="event.html">
+                    event
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="bg bg-rectangule-02">
+                  <a href="#">
+                    artistic directors
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="bg bg-rectangule-02">
+                  <a href="#">
+                    participants
+                  </a>
+                </span>
+              </li>
+              <!-- <li>
+              <span class="bg bg-rectangule-02">
+              <a href="#">
+              locations
+            </a>
+          </span>
+        </li> -->
+        <!-- <li>
+        <span class="bg bg-rectangule-02">
         <a href="#">
-          tab 2022 guide
-        </a>
-      </span>
-    </li>
-  </ul>
+        calendar
+      </a>
+    </span>
+  </li> -->
+  <li>
+    <span class="bg bg-rectangule-02">
+      <a href="#">
+        tab 2022 guide
+      </a>
+    </span>
+  </li>
+</ul>
 </li>
 <li>
   <span class="bg bg-rectangule-02">
@@ -107,7 +107,6 @@
 </li>
 </ul>
 </nav>
-</div>
 </div>
 </header>
 
@@ -163,7 +162,7 @@
               <span class="drop-icon"><img src="assets/img/drop-down.svg" alt=""></span>
             </div>
             <div class="drop-down-children">
-            <img src="assets/img/calendar.svg" alt="">
+              <img src="assets/img/calendar.svg" alt="">
             </div>
 
           </div>
@@ -405,5 +404,9 @@ $(".date-title").click(function(){
   $(".date-title + .drop-down-children").slideToggle( "slow", function() {
     // Animation complete.
   });
+});
+// navigation
+$(".nav-icon").click(function(){
+  $(".navigation").toggleClass("active");
 });
 </script>
