@@ -76,17 +76,14 @@ main {
   animation-delay: .3s;
   -webkit-transform: translateZ(0);
 	-moz-transform: translateZ(0);
-  margin-lefT: -76px;
 }
 .date {
   font-size: 20px;
   line-height: 20px;
-  margin-left: 76px;
   display: block;
-  animation: bubble 3s linear infinite;
-  animation-delay: .4s;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
+}
+main span:nth-of-type(2) {
+  margin-left: 124px;
 }
 main span {
   font-size: 36px;
@@ -186,6 +183,9 @@ footer > div:nth-of-type(3) {
   main span {
     font-size: 32px;
     line-height: 32px;
+  }
+  main span:nth-of-type(2) {
+    margin-left: 111px;
   }
   footer > div:nth-of-type(1) {
     font-size: 30px;
